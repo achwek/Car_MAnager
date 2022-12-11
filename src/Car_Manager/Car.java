@@ -40,5 +40,8 @@ public class Car {
 	public void setModelCar(String modelCar) {
 		this.modelCar = modelCar;
 	}
+	public String messageText(String type, String model) {
+		return "Type Car : "+type+" Model Car : "+model;
+	}
 
 }

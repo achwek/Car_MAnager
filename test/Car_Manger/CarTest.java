@@ -1,8 +1,10 @@
 package Car_Manger;
 
+import static org.junit.Assert.fail;
 import static org.junit.Assert.*;
-
 import org.junit.Test;
+
+import Car_Manager.Car;
 
 public class CarTest {
 
@@ -18,8 +20,15 @@ public class CarTest {
 
 	@Test
 	public void testSetIdCar() {
-		fail("Not yet implemented");
-	}
+		Car c = new Car();
+		c.setIdCar(123);
+		if(c.getIdCar()==123) {
+			assertTrue("true",true);
+		}else {
+			fail("false");
+
+		}
+		}
 
 	@Test
 	public void testGetTypeCar() {
@@ -40,5 +49,6 @@ public class CarTest {
 	public void testSetModelCar() {
 		fail("Not yet implemented");
 	}
+
 
 }
