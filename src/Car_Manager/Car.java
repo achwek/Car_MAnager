@@ -41,7 +41,8 @@ public class Car {
 		this.modelCar = modelCar;
 	}
 	public String messageText(String type, String model) {
-		return "Type Car : "+type+" Model Car : "+model;
+		String msg="Type Car : "+type+" Model Car : "+model;
+		return msg;
 	}
 
 }
